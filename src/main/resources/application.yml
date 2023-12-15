@@ -1,0 +1,25 @@
+server:
+  port: 9191
+#spring:
+  #jpa:
+    #defer-datasource-initialization: true
+    #hibernate:
+      #ddl-auto: update
+    #properties:
+      #hibernate:
+        #dialect: org.hibernate.dialect.SQLServer2022Dialect
+  #profiles:
+    #active: mysql
+  #r2dbc:
+    #url: r2dbc:mysql://localhost:3306/StudentDb
+    #username: root #
+    #password: vamsi
+  #r2dbc:
+    #url: r2dbc:mssql://SAILS-DM206/StudentDb;authentication=windows
+#spring.profiles.active=mysql
+#spring.r2dbc.url=r2dbc:mssql://server1:1433/your_database;authentication=windows
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost/mydatabase
+    username: postgres
+    password: vamsi
